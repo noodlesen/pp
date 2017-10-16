@@ -292,6 +292,9 @@ h1 {
   font-size: 240%;
   font-weight: 300;
   color: #c2a55b; }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 200%; } }
 
 .subh1 {
   display: block;
@@ -314,5 +317,8 @@ h1 {
   border-width: 2px;
   border-radius: .5em;
   text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .contact {
+      width: 90%; } }
 
 /*# sourceMappingURL=../../../../../../../../static/scss/main.css.map */

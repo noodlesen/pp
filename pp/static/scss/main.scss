@@ -103,6 +103,9 @@ h1{
     font-size: 240%;
     font-weight: 300;
     color: #c2a55b;
+    @include respond-to(xs){
+        font-size: 200%;
+    }
 
 }
 
@@ -128,6 +131,9 @@ h1{
     border-width: 2px;
     border-radius: .5em;
     text-align: center;
+    @include respond-to(xs){
+        width:90%;
+    }
 }
 
 
