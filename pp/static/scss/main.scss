@@ -71,12 +71,12 @@
     text-align: left;
     font-size: 170%;
     width: 100%;
-    margin: auto;
+    margin: 0 auto 1em;
     line-height: .8em;
     ul>li {
         height: 2.5em;
         @include respond-to(xs){
-            height: 3em;
+            height: 4.5em;
         }
     }
     border-color: #927e4d;
@@ -113,6 +113,21 @@ h1{
     line-height: 1px;
     font-style: italic;
     color: #927e4d;
+}
+
+.contact{
+    display: block;
+    width: 40%;
+    margin: auto;
+    font-size: 180%;
+    text-decoration: none;
+    color: #c2a55b;
+    padding: 0.2em;
+    border-color: #c2a55b;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: .5em;
+    text-align: center;
 }
 
 
