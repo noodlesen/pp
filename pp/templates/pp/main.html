@@ -2,6 +2,10 @@
 {% load staticfiles %}
 {% load sass_tags %}
 
+{% block title %}
+Портретная фотостудия Константина Лаппшова
+{% endblock %}
+
 {% block head %}
     <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
     <link href="{% sass_src 'scss/main.scss' %}" rel="stylesheet" type="text/css" />
@@ -47,6 +51,6 @@
 {% block scripts %}
     <script type="text/javascript" src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/gallery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/onepage.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 {% endblock %}
 

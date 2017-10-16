@@ -13,14 +13,16 @@
 
 .text-slide{
     p{
-        font-size: 140%;
+        text-indent: 1em;
+        text-align: left;
+        font-size: 130%;
         display: block;
         margin-bottom: 1.7em;
         &:first-letter{
             font-size: 150%;
         }
     }
-    padding: 4em 12em;
+    padding: 4em 14em;
     @include respond-to(md){
        padding: 3em 7em; 
     }
@@ -41,14 +43,22 @@
 
 body{
     font-family: 'Cormorant', serif;
-    color: #5c523a;
+    color: #927e4d;
+    /* color: #917a44 */
+    /* color: #5c523a; */
+    background: url('../images/tex.png');
+    background-size: 20%;
+    text-shadow: 2px 2px 2px black;
 }
 
 h1{
     line-height: 35px;
+    font-size: 200%;
 }
 
 .subh1{
+    display: block;
+    margin-top: 0.5em;
     font-size: 70%;
     line-height: 1px;
 }
