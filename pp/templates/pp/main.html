@@ -1,0 +1,52 @@
+{% extends 'pp/base.html' %}
+{% load staticfiles %}
+{% load sass_tags %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+    <link href="{% sass_src 'scss/main.scss' %}" rel="stylesheet" type="text/css" />
+    <link href="{% sass_src 'scss/gallery.scss' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+
+<div class="slide">
+    <div id="gallery" class="gallery">
+        <div class="photo h-photo p1"><img src="{% static 'images/galleries/port_slides/1.jpg' %}" /></div>
+        <div class="photo h-photo p2"><img src="{% static 'images/galleries/port_slides/2.jpg' %}" /></div>
+        <div class="photo h-photo p3"><img src="{% static 'images/galleries/port_slides/3.jpg' %}" /></div>
+        <div class="photo h-photo p4"><img src="{% static 'images/galleries/port_slides/4.jpg' %}" /></div>
+        <div class="photo h-photo p5"><img src="{% static 'images/galleries/port_slides/5.jpg' %}" /></div>
+        <div class="photo h-photo p6"><img src="{% static 'images/galleries/port_slides/6.jpg' %}" /></div>
+        <div class="photo h-photo p7"><img src="{% static 'images/galleries/port_slides/7.jpg' %}" /></div>
+        <div class="photo h-photo p8"><img src="{% static 'images/galleries/port_slides/8.jpg' %}" /></div>
+        <div class="photo h-photo p9"><img src="{% static 'images/galleries/port_slides/9.jpg' %}" /></div>
+        <div class="photo h-photo p10"><img src="{% static 'images/galleries/port_slides/10.jpg' %}" /></div>
+        <div class="photo h-photo p11"><img src="{% static 'images/galleries/port_slides/11.jpg' %}" /></div>
+        <div class="photo h-photo p12"><img src="{% static 'images/galleries/port_slides/12.jpg' %}" /></div>
+        <div class="photo h-photo p13"><img src="{% static 'images/galleries/port_slides/13.jpg' %}" /></div>
+    </div>
+</div>
+<div class="text-slide">
+    <p><!-- Здравствуйте! Меня зовут Константин Лапшов.  -->Портретная фотография — моя страсть. <br> На протяжении многих лет меня неизменно восхищает то волшебное чувство, которое возникает, когда ты видишь по-настоящему живой портрет. Есть что-то глубокое в нас, что вздрагивает, когда мы встречаемся глазами.</p>
+<!-- 
+<p>Но в наши дни, портрет стал даже чем-то значительно большим чем прежде. Не смотрите на портрет просто как на обычную картинку. Не забывайте, что первое впечатление можно произвести только один раз. И в наше время это может быть отнюдь не личная встреча. Мир становится все теснее. Один только ваш аватар в социальной сети могут увидеть тысячи людей.</p> -->
+
+<p>В этом портфолио вы не найдете фотографий профессиональных моделей или актёров. Только обычные люди, такие как мы с вами. Потому что, я уверен, что каждый человек может выглядеть сногсшибательно. Многие не уверенны в своей внешности, но посмотрите — многие голливудские звезды отнюдь не наделены безупречной внешностью, наоборот, некоторые особенные черты делают их узнаваемыми и более выразительными. В каждом из нас есть что-то привлекательное и уникальное, и мне хотелось бы это раскрыть с помощью портрета.</p>
+
+<p>Я верю, что каждый может выглядеть как голливудская звезда. Многие из нас недооценивают свою внешность, потому что не учитывают свою харизму, обаяние и шарм. Я пытаюсь сделать портрет максимально живым и передать это все в одном кадре.
+Я обещаю, что могу сделать для вас замечательный портрет независимо от вашего пола, возраста и внешности.</p>
+
+<p>Свяжитесь со мной сейчас, и я расскажу вам все подробности о портретной фотосессии в моей студии.</p>
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/gallery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/onepage.js' %}"></script>
+{% endblock %}
+

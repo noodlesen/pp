@@ -1,0 +1,396 @@
+@charset "UTF-8";
+/*  EXAMPLE
+.block {
+  float: left;
+  width: 250px;
+  @include respond-to(handhelds) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+}​ */
+.color-blue {
+  color: #08c; }
+
+.color-cyan {
+  color: #0cbeb2; }
+
+.color-green {
+  color: #55d426; }
+
+.color-yellow {
+  color: #ff9800; }
+
+.color-orange {
+  color: #ff9800; }
+
+.color-red {
+  color: #ff4e2b; }
+
+.color-magenta {
+  color: #b652bf; }
+
+.color-dark-blue {
+  color: #002c87; }
+
+.color-dark-cyan {
+  color: #00705d; }
+
+.color-dark-green {
+  color: #0c9702; }
+
+.color-dark-orange {
+  color: #ff7b00; }
+
+.color-dark-yellow {
+  color: #ffd900; }
+
+.color-dark-red {
+  color: #ff0a02; }
+
+.color-dark-magenta {
+  color: #821a8f; }
+
+.color-light-blue {
+  color: #acd6e7; }
+
+.color-light-cyan {
+  color: #b1e8df; }
+
+.color-light-green {
+  color: #c8efb1; }
+
+.color-light-orange {
+  color: #ffeaa5; }
+
+.color-light-yellow {
+  color: #fff8a9; }
+
+.color-light-red {
+  color: #ffc4b3; }
+
+.color-pale-blue {
+  color: #d5eaf3; }
+
+.color-light-magenta {
+  color: #d294d7; }
+
+.color-pale-cyan {
+  color: #d8f3ef; }
+
+.color-pale-green {
+  color: #e3f7d8; }
+
+.color-pale-yellow {
+  color: #fff4d2; }
+
+.color-pale-yellow {
+  color: #fffbd4; }
+
+.color-pale-red {
+  color: #ffe1d9; }
+
+.color-pale-magenta {
+  color: #e8c9eb; }
+
+.back-color-none {
+  background-color: #78a7b4;
+  color: white; }
+
+.back-color-blue {
+  background-color: #08c;
+  color: white; }
+
+.back-color-cyan {
+  background-color: #0cbeb2;
+  color: white; }
+
+.back-color-green {
+  background-color: #55d426;
+  color: white; }
+
+.back-color-yellow {
+  background-color: #ff9800;
+  color: white; }
+
+.back-color-orange {
+  background-color: #ff9800;
+  color: white; }
+
+.back-color-red {
+  background-color: #ff4e2b;
+  color: white; }
+
+.back-color-magenta {
+  background-color: #b652bf;
+  color: white; }
+
+.back-color-dark-blue {
+  background-color: #002c87;
+  color: white; }
+
+.back-color-dark-cyan {
+  background-color: #00705d;
+  color: white; }
+
+.back-color-dark-green {
+  background-color: #0c9702;
+  color: white; }
+
+.back-color-dark-orange {
+  background-color: #ff7b00;
+  color: white; }
+
+.back-color-dark-yellow {
+  background-color: #ffd900;
+  color: white; }
+
+.back-color-dark-red {
+  background-color: #ff0a02;
+  color: white; }
+
+.back-color-dark-magenta {
+  background-color: #821a8f;
+  color: white; }
+
+.back-color-light-blue {
+  background-color: #acd6e7;
+  color: white; }
+
+.back-color-light-cyan {
+  background-color: #b1e8df;
+  color: white; }
+
+.back-color-light-green {
+  background-color: #c8efb1;
+  color: white; }
+
+.back-color-light-orange {
+  background-color: #ffeaa5;
+  color: white; }
+
+.back-color-light-yellow {
+  background-color: #fff8a9;
+  color: white; }
+
+.back-color-light-red {
+  background-color: #ffc4b3;
+  color: white; }
+
+.back-color-pale-blue {
+  background-color: #d5eaf3;
+  color: white; }
+
+.back-color-light-magenta {
+  background-color: #d294d7;
+  color: white; }
+
+.back-color-pale-cyan {
+  background-color: #d8f3ef;
+  color: white; }
+
+.back-color-pale-green {
+  background-color: #e3f7d8;
+  color: white; }
+
+.back-color-pale-orange {
+  background-color: #fff4d2;
+  color: white; }
+
+.back-color-pale-yellow {
+  background-color: #fffbd4;
+  color: white; }
+
+.back-color-pale-red {
+  background-color: #ffe1d9;
+  color: white; }
+
+.back-color-pale-magenta {
+  background-color: #e8c9eb;
+  color: white; }
+
+/*  div {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: red;
+}  */
+h1, h2, h3, h4 {
+  margin-top: 0;
+  font-weight: 300; }
+
+.inactive {
+  display: none; }
+
+.row {
+  padding: 10px;
+  outline-color: blue; }
+  .row h2.row__header {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-size: 180%; }
+
+h3.col__header {
+  font-size: 150%; }
+
+a, .plink {
+  text-decoration-line: underline;
+  text-decoration-style: dotted; }
+
+.plink {
+  text-decoration: underline;
+  cursor: pointer; }
+
+.subtitle {
+  font-style: italic;
+  margin-top: -12px;
+  color: #878787;
+  font-size: 0.8em; }
+
+.error {
+  color: red;
+  outline-color: red;
+  outline-style: solid;
+  outline-width: 2px; }
+
+.debug {
+  outline-width: 1px;
+  outline-color: red;
+  outline-style: solid; }
+
+.waiting {
+  cursor: pointer;
+  color: #c6c6c6; }
+  .waiting:hover {
+    color: #27c257; }
+
+.label-as-badge {
+  border-radius: 1em; }
+
+.label-brand {
+  background-color: #08c;
+  color: white; }
+
+.hint {
+  font-size: 120%;
+  color: #878787;
+  padding: .5em; }
+
+.hint-icon {
+  font-size: 200%; }
+
+.nano-timeline img {
+  max-width: 12px;
+  margin-left: -1px; }
+
+.center-label {
+  font-size: 300%;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 100px; }
+
+.center-sub-label {
+  text-align: center; }
+
+/* section{
+    border-width: 1px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: $gray5;
+    padding: 40px 40px;
+    background-color: white;
+} */
+section {
+  border-width: 1px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #efefef;
+  background-color: white;
+  margin-bottom: 8px; }
+
+.section-header {
+  border-radius: 6px 6px 0 0;
+  background-color: #08c;
+  color: white;
+  padding: 2px 7px; }
+  .section-header h2 {
+    margin-bottom: 0px;
+    font-size: 22px;
+    padding: 5px; }
+  .section-header:hover .help-sign {
+    display: inline; }
+
+.section-body {
+  padding: 15px; }
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.form-inline {
+  margin-bottom: 15px; }
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0; }
+
+.avatar-big {
+  border-radius: 6px; }
+
+.avatar-small {
+  border-radius: 3px;
+  width: 40px;
+  height: 40px; }
+
+.inline-menu__item {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 3px; }
+  .inline-menu__item:hover {
+    background-color: #c6c6c6;
+    color: white; }
+  @media screen and (max-width: 486px) {
+    .inline-menu__item {
+      display: block;
+      width: 100%; } }
+
+.inline-menu__item--selected {
+  background-color: #08c;
+  color: white; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("/static/font/fontello.eot?83001647");
+  src: url("/static/font/fontello.eot?83001647#iefix") format("embedded-opentype"), url("/static/font/fontello.woff?83001647") format("woff"), url("/static/font/fontello.ttf?83001647") format("truetype"), url("/static/font/fontello.svg?83001647#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.demo-icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/*# sourceMappingURL=../../../../../../../../static/scss/common.css.map */

@@ -1,0 +1,48 @@
+@import "config";
+
+
+body {
+    color: $gray2;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#logo{
+    height:auto;
+    img{
+        margin: auto;
+        display: block;
+    }
+}
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#menu{
+    font-size: 90%;
+    a{
+        text-decoration: none;
+        color: gray;
+    }
+}
+
+#header{
+    margin-top: 30px;
+}
+
