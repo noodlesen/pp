@@ -55,7 +55,18 @@ $(document).ready(function(){
 
     // Event listeners
     $('.photo').on('click', function(){
+        touched = true;
         changePhoto(1);
+    });
+
+    $('#right-arrow').on('click', function(){
+        touched = true;
+        changePhoto(1);
+    });
+
+    $('#left-arrow').on('click', function(){
+        touched = true;
+        changePhoto(-1);
     });
 
     $('body').keyup(function(e){

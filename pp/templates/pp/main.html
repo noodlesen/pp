@@ -3,7 +3,7 @@
 {% load sass_tags %}
 
 {% block title %}
-Портретная фотостудия Константина Лаппшова
+Портретный фотограф Константин Лаппшов
 {% endblock %}
 
 {% block head %}
@@ -15,6 +15,9 @@
 {% block content %}
 
 <div class="slide">
+    <div class="field" id="left-field">
+        <img id="left-arrow" class="img img-responsive" src="{% static 'images/leftarrow.png' %}" alt="">
+    </div>
     <div id="gallery" class="gallery">
         <div class="photo h-photo p1"><img src="{% static 'images/galleries/port_slides/1.jpg' %}" /></div>
         <div class="photo h-photo p2"><img src="{% static 'images/galleries/port_slides/2.jpg' %}" /></div>
@@ -30,6 +33,10 @@
         <div class="photo h-photo p12"><img src="{% static 'images/galleries/port_slides/12.jpg' %}" /></div>
         <div class="photo h-photo p13"><img src="{% static 'images/galleries/port_slides/13.jpg' %}" /></div>
     </div>
+    <div class="field" id="right-field">
+        <img id="right-arrow" class="img img-responsive"  src="{% static 'images/rightarrow.png' %}" alt="">
+    </div>
+    <div class="clearfix"></div>
 </div>
 <div class="text-slide">
     <div class="statement">Портретная фотография — моя страсть</div>
@@ -54,7 +61,7 @@
         <li>До 15 декабря действует специальное предложение в честь открытия студии</li>
     </ul>
 </div>
-<a href="https://goo.gl/forms/sk6xEnhKP426IM4a2" class="contact">ЗАДАТЬ ВОПРОС</a>
+<a href="https://goo.gl/forms/sk6xEnhKP426IM4a2" class="contact">СВЯЗАТЬСЯ СО&nbsp;МНОЙ</a>
 </div>
 
 
