@@ -298,7 +298,7 @@ h1 {
 
 .subh1 {
   display: block;
-  margin-top: 0.5em;
+  margin-top: .5em;
   font-size: 60%;
   line-height: 1px;
   font-style: italic;
@@ -307,7 +307,7 @@ h1 {
 .contact {
   display: block;
   width: 40%;
-  margin: auto;
+  margin: 1em auto;
   font-size: 180%;
   text-decoration: none;
   color: #c2a55b;
